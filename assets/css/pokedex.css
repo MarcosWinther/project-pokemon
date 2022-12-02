@@ -1,3 +1,14 @@
+.content h1 {
+   font-family: 'Pokemon Solid', sans-serif;
+   text-align: center;
+   background-color: #f33c2c;
+   color: #e7bd0f;
+   font-size: 2.5rem;
+   line-height: 5rem;
+   text-shadow: #2c5da4 0.1rem 0.1rem 0.2rem;
+   filter: brightness(1.1);
+}
+
 .pokemons {
    display: grid;
    grid-template-columns: 1fr;
@@ -87,9 +98,13 @@
 }
 
 .pokemon .name {
+   margin-bottom: .25rem;
+}
+
+.pokemon .name a {
+   text-decoration: none;
    text-transform: capitalize;
    color: #fff;
-   margin-bottom: .25rem;
 }
 
 .pokemon .number {
@@ -145,6 +160,18 @@
    background-color: #6c79db;
    border: none;
    border-radius: 1rem;
+}
+
+#popup {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   width: 300px;
+   height: 180px;
+   padding: 15px;
+   border: solid 1px black;
+   display: none;
 }
 
 @media screen and (min-width: 380px) {

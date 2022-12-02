@@ -1,0 +1,1 @@
+const pokemonDetail = document.getElementById('pokemon_detail');
